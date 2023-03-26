@@ -1,0 +1,190 @@
+:root {
+    --main-text-color: #434455;
+    --title-text-color: #2e2f42;
+    --primary-brand: #4d5ae5;
+    --accent-color: #e7e9fc;
+    --light-mode: #f4f4fd;
+    --pressed-state: #404bbf;
+    --main-bg-color: #ffffff;
+    --secondary-bg-color: #f4f4fd;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+/*---------------------- INDEX.HTML--------------------- */
+/* -----------------------HEADER----------------------- */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-brand);
+}
+
+.dark-text {
+    color: var(--title-text-color);
+}
+
+.site-nav {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link {
+    color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--pressed-state);
+}
+
+.contacts {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.contacts .link {
+    color: var(--main-text-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--pressed-state);
+}
+
+/* -----------------------/HEADER----------------------- */
+/* -----------------------MAIN----------------------- */
+/* -----------------------HERO----------------------- */
+.hero {
+    background-color: var(--title-text-color);
+}
+
+.main-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--main-bg-color);
+}
+
+.order-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--main-bg-color);
+
+    background: var(--primary-brand);
+}
+
+.order-btn:hover,
+.order-btn:focus {
+    background-color: var(--pressed-state);
+    cursor: pointer;
+}
+
+/* -----------------------/HERO----------------------- */
+/* -----------------------SECTIONS----------------------- */
+.team {
+    background-color: var(--secondary-bg-color);
+}
+
+.card-bgc {
+    background-color: var(--main-bg-color);
+}
+
+/* --------H2---------- */
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--title-text-color);
+}
+
+/* -------H3---------- */
+.section-description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+
+.section-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* -----------------------/MAIN----------------------- */
+/* -----------------------FOOTER----------------------- */
+.footer {
+    background-color: var(--title-text-color);
+}
+
+.light-text {
+    color: var(--light-mode);
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+/* -----------------------/FOOTER----------------------- */
+
+/* ---------------PORTFOLIO PAGE--------------------------- */
+/* --------------BUTTONS------------------- */
+.filter-button {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    color: var(--primary-brand);
+    background-color: var(--light-mode);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    background-color: var(--pressed-state);
+    color: var(--main-bg-color);
+    cursor: pointer;
+}
+
+/* --------------/BUTTONS------------------- */
+
+/* --------------LINKS------------------- */
+.link-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+}
