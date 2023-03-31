@@ -36,15 +36,21 @@ p {
     padding: 0;
 }
 
-/*---------------------- INDEX.HTML--------------------- */
-/* -----------------------HEADER----------------------- */
-
-
 .container {
     width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+/*---------------------- INDEX.HTML--------------------- */
+/* -----------------------HEADER----------------------- */
+
+header {
+    border-bottom: 1px solid var(--accent-color);
+}
+
 
 .box {
     display: flex;
@@ -62,8 +68,8 @@ p {
 
 .logo {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    /* padding-top: 16px;
+    padding-bottom: 16px; */
 
 
     font-family: 'Raleway', sans-serif;
@@ -137,10 +143,17 @@ p {
 
 /* -----------------------/HEADER----------------------- */
 /* -----------------------MAIN----------------------- */
+/* -----------UTILITES SECTION------------------------- */
+.section {
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
 /* -----------------------HERO----------------------- */
-.hero {
-    background-color: var(--title-text-color);
+.section:nth-child(1) {
     padding: 188px 0px;
+
+    background-color: var(--title-text-color);
 
     text-align: center;
 }
@@ -181,10 +194,12 @@ p {
 /* -----------------------/HERO----------------------- */
 /* -----------------------SECTIONS----------------------- */
 
+.section:nth-child(3) {
+    padding-top: 0px;
+}
 
-.skils,
-.team {
-    padding-bottom: 120px;
+.section:nth-child(4) {
+    background-color: var(--secondary-bg-color);
 }
 
 /* --------H2---------- */
@@ -251,10 +266,6 @@ p {
     margin-left: 24px;
 }
 
-.team {
-    background-color: var(--secondary-bg-color);
-}
-
 .card-bgc {
     background-color: var(--main-bg-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -271,6 +282,8 @@ p {
 /* -----------------------/MAIN----------------------- */
 /* -----------------------FOOTER----------------------- */
 .footer {
+    padding-bottom: 100px;
+    padding-top: 100px;
     background-color: var(--title-text-color);
 }
 
@@ -283,6 +296,14 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+}
+
+.footer .container .logo {
+    margin-bottom: 16px;
+}
+
+.footer .container .footer-text {
+    width: 264px;
 }
 
 /* -----------------------/FOOTER----------------------- */
