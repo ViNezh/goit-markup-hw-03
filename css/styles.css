@@ -38,13 +38,34 @@ p {
 
 /*---------------------- INDEX.HTML--------------------- */
 /* -----------------------HEADER----------------------- */
+
+
 .container {
-    width: 1230px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
+.box {
+    display: flex;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-item .item+.item {
+    margin-left: 40px;
+}
+
 .logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -59,6 +80,9 @@ p {
 }
 
 .site-nav {
+    display: flex;
+    margin-left: 70px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -66,6 +90,10 @@ p {
 }
 
 .site-nav .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     color: var(--title-text-color);
 }
 
@@ -75,13 +103,23 @@ p {
 }
 
 .contacts {
+    margin-left: auto;
+
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
+.contacts-item {
+    display: flex;
+}
+
 .contacts .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     color: var(--main-text-color);
 }
 
@@ -90,12 +128,18 @@ p {
     color: var(--pressed-state);
 }
 
+
+.contacts .item+.item {
+    margin-left: 40px;
+}
+
+
+
 /* -----------------------/HEADER----------------------- */
 /* -----------------------MAIN----------------------- */
 /* -----------------------HERO----------------------- */
 .hero {
     background-color: var(--title-text-color);
-    height: 600px;
     padding: 188px 0px;
 
     text-align: center;
@@ -136,10 +180,7 @@ p {
 
 /* -----------------------/HERO----------------------- */
 /* -----------------------SECTIONS----------------------- */
-.features {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
+
 
 .skils,
 .team {
@@ -183,6 +224,30 @@ p {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+/* -----------------FEATURES------------------------ */
+.features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.features-item {
+    display: flex;
+}
+
+.features-item .item+.item {
+    margin-left: 24px;
+}
+
+/* -----------------/FEATURES------------------------ */
+/* -----------------SKILS----------------------- */
+.skils-item {
+    display: flex;
+}
+
+.skils-item .item+.item {
+    margin-left: 24px;
 }
 
 /* -----------------------/MAIN----------------------- */
