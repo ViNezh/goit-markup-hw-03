@@ -36,6 +36,10 @@ p {
     padding: 0;
 }
 
+img {
+    display: block;
+}
+
 .container {
     width: 1158px;
     padding-left: 15px;
@@ -56,6 +60,8 @@ header {
     display: flex;
 }
 
+/* -------MENU OF NAVIGATION--------- */
+
 .nav-item {
     display: flex;
     align-items: center;
@@ -68,9 +74,6 @@ header {
 
 .logo {
     display: block;
-    /* padding-top: 16px;
-    padding-bottom: 16px; */
-
 
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -107,6 +110,8 @@ header {
 .site-nav .link:focus {
     color: var(--pressed-state);
 }
+
+/* -------------------CONTACTS-------------- */
 
 .contacts {
     margin-left: auto;
@@ -168,6 +173,8 @@ header {
     color: var(--main-bg-color);
 }
 
+/* -----------BUTTON ORDER----------------- */
+
 .order-btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -192,7 +199,7 @@ header {
 }
 
 /* -----------------------/HERO----------------------- */
-/* -----------------------SECTIONS----------------------- */
+/* -----------------------TEXT PARAMETERS----------------------- */
 
 /* --------H2---------- */
 
@@ -226,7 +233,7 @@ header {
     letter-spacing: 0.02em;
 }
 
-/* -----------------FEATURES------------------------ */
+/* -----------------SECTION FEATURES------------------------ */
 
 .features-item {
     display: flex;
@@ -237,7 +244,7 @@ header {
 }
 
 /* -----------------/FEATURES------------------------ */
-/* -----------------SKILS----------------------- */
+/* -----------------SECTION SKILS----------------------- */
 
 .section:nth-child(3) {
     padding-top: 0px;
@@ -252,7 +259,7 @@ header {
 }
 
 /* -----------------/SKILS----------------------- */
-/* -----------------TEAM----------------------- */
+/* -----------------SECTION TEAM----------------------- */
 
 .section:nth-child(4) {
     background-color: var(--secondary-bg-color);
@@ -309,29 +316,82 @@ header {
 /* -----------------------/FOOTER----------------------- */
 
 /* ---------------PORTFOLIO PAGE--------------------------- */
+/* ---------LIST OF BUTTONS------------------- */
+
+.filters {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.filter-list {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-list .item:not(:last-child) {
+    margin-right: 24px;
+}
+
 /* --------------BUTTONS------------------- */
+
 .filter-button {
+    padding: 12px 24px;
+
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    color: var(--primary-brand);
+    background-color: var(--light-mode);
+
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-
-    color: var(--primary-brand);
-    background-color: var(--light-mode);
 }
 
 .filter-button:hover,
 .filter-button:focus {
     background-color: var(--pressed-state);
+    border: 1px solid var(--pressed-state);
     color: var(--main-bg-color);
     cursor: pointer;
 }
 
 /* --------------/BUTTONS------------------- */
+/* ---------------LIST OF EXAMPLES---------- */
 
-/* --------------LINKS------------------- */
+.examples {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 72px;
+}
+
+.examples .item {
+    margin-right: 24px;
+    margin-bottom: 48px;
+}
+
+.examples .item:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.examples .item:nth-child(n+7) {
+    margin-bottom: 0px;
+}
+
+/* ------------DESIGN FOR TEXT INSIDE OF CARD------ */
+
+.card-sign {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    border-left: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+}
+
+/* --------------TEXT INSIDE CARD------------------- */
 .link-text {
     font-size: 16px;
     line-height: 1.5;
