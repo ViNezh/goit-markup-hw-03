@@ -57,8 +57,8 @@ img {
 
 .nav-item {
     display: flex;
-    margin-right: auto;
     align-items: center;
+    margin-right: auto;
     gap: 40px;
 }
 
@@ -173,8 +173,9 @@ img {
 
 .order-btn {
     display: block;
-    margin: 0 auto;
+
     cursor: pointer;
+    margin: 0 auto;
 
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
