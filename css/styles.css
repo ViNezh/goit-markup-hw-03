@@ -196,7 +196,6 @@ img {
 .order-btn:hover,
 .order-btn:focus {
     background-color: var(--pressed-state);
-    /* cursor: pointer; */
 }
 
 /* -----------------------/HERO----------------------- */
