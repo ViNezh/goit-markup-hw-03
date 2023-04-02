@@ -204,6 +204,8 @@ header {
 /* --------H2---------- */
 
 .section-title {
+    margin-bottom: 72px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -211,20 +213,18 @@ header {
     text-align: center;
     text-transform: capitalize;
     color: var(--title-text-color);
-
-    margin-bottom: 72px;
 }
 
 /* -------H3---------- */
 
 .section-description {
+    margin-bottom: 8px;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-
-    margin-bottom: 8px;
 }
 
 .section-text {
@@ -237,6 +237,11 @@ header {
 
 .features-item {
     display: flex;
+}
+
+/* FEATURES ITEM WIDTH CALCULATED */
+.features-item .item {
+    width: calc((100%-72px)/4);
 }
 
 .features-item .item+.item {
@@ -254,6 +259,11 @@ header {
     display: flex;
 }
 
+/* SKILS ITEM WIDTH CALCULATED */
+.skils-item .item {
+    width: calc((100%-48px)/3);
+}
+
 .skils-item .item+.item {
     margin-left: 24px;
 }
@@ -267,6 +277,10 @@ header {
 
 .team-item {
     display: flex;
+}
+
+.team-item .card-bgc {
+    width: calc((100%-72px)/4);
 }
 
 .card-bgc+.card-bgc {
@@ -318,7 +332,7 @@ header {
 /* ---------------PORTFOLIO PAGE--------------------------- */
 /* ---------LIST OF BUTTONS------------------- */
 
-.filters {
+.section-p {
     padding-top: 96px;
     padding-bottom: 120px;
 }
@@ -364,10 +378,11 @@ header {
 .examples {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 72px;
+    margin-top: 72px;
 }
 
 .examples .item {
+    max-width: calc((100%-48px)/3);
     margin-right: 24px;
     margin-bottom: 48px;
 }
@@ -380,7 +395,7 @@ header {
     margin-bottom: 0px;
 }
 
-/* ------------DESIGN FOR TEXT INSIDE OF CARD------ */
+/* ------------DESIGN FOR BOTTOM SIDE OF CARD------ */
 
 .card-sign {
     padding-top: 32px;
@@ -392,9 +407,9 @@ header {
 }
 
 /* --------------TEXT INSIDE CARD------------------- */
-.link-text {
+/* .link-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
-}
+} */
