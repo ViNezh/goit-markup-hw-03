@@ -58,7 +58,7 @@ img {
 .nav-item {
     display: flex;
     align-items: center;
-    margin-right: auto;
+    /* margin-right: auto; */
     gap: 40px;
 }
 
