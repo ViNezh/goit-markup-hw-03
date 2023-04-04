@@ -65,7 +65,7 @@ img {
 .nav-item {
     display: flex;
     align-items: center;
-    /* margin-right: auto; */
+    margin-right: auto;
     gap: 40px;
 }
 
@@ -89,7 +89,6 @@ img {
 .site-nav {
     display: flex;
     gap: 40px;
-    margin-right: auto;
 
     font-weight: 500;
     font-size: 16px;
