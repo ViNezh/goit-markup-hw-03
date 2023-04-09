@@ -100,13 +100,15 @@ img {
     letter-spacing: 0.02em;
 }
 
-.site-nav>.item {
+/* .site-nav>.item {
     padding-top: 24px;
     padding-bottom: 24px;
-}
+} */
 
 .site-nav .link {
     display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     color: var(--title-text-color);
 }
